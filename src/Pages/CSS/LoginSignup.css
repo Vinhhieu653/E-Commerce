@@ -1,0 +1,151 @@
+.login-signup {
+  width: 100%;
+  height: 100vh; /* Sử dụng toàn bộ chiều cao của màn hình */
+  display: flex;
+  justify-content: center; /* Canh giữa theo chiều ngang */
+  align-items: center; /* Canh giữa theo chiều dọc */
+  background: #fce3fe;
+}
+
+.login-signup h1 {
+  margin: 20px 0;
+  font-size: 32px; /* Kích thước phông chữ lớn hơn cho tiêu đề */
+  text-align: center;
+}
+
+.login-signup-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  margin-top: 30px;
+}
+
+.login-signup-fields input {
+  height: 50px;
+  width: 100%;
+  padding-left: 20px;
+  border: 1px solid #c9c9c9;
+  outline: none;
+  font-size: 18px;
+}
+
+.login-signup-container button {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background: #ff4141;
+  margin-top: 30px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-signup-login {
+  margin-top: 20px;
+  color: #5c5c5c;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.login-signup-login span {
+  color: #ff4141;
+  font-weight: 600;
+}
+
+.login-signup-agree {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  color: #5c5c5c;
+  font-size: 18px;
+  font-weight: 500;
+  gap: 20px;
+}
+
+/* Kích thước màn hình lớn hơn hoặc bằng 1280px */
+@media (min-width: 1280px) {
+  .login-signup-container {
+    width: 600px; /* Tăng chiều rộng container cho màn hình lớn hơn */
+    padding: 60px 80px; /* Tăng padding cho container */
+  }
+
+  .login-signup h1 {
+    font-size: 36px; /* Tăng kích thước tiêu đề cho màn hình lớn hơn */
+  }
+
+  .login-signup-fields input {
+    height: 60px; /* Tăng chiều cao input cho màn hình lớn hơn */
+  }
+
+  .login-signup-container button {
+    height: 60px; /* Tăng chiều cao nút cho màn hình lớn hơn */
+    font-size: 24px; /* Tăng kích thước font cho nút */
+  }
+}
+
+/* Kích thước màn hình từ 1024px đến 1279px */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .login-signup-container {
+    width: 580px; /* Giữ nguyên kích thước container */
+    padding: 50px 70px; /* Điều chỉnh padding cho container */
+  }
+
+  .login-signup h1 {
+    font-size: 28px; /* Điều chỉnh kích thước tiêu đề cho màn hình này */
+  }
+
+  .login-signup-fields input {
+    height: 55px; /* Điều chỉnh chiều cao input cho màn hình này */
+  }
+
+  .login-signup-container button {
+    height: 55px; /* Điều chỉnh chiều cao nút cho màn hình này */
+    font-size: 22px; /* Điều chỉnh kích thước font cho nút */
+  }
+}
+
+/* Kích thước màn hình từ 800px đến 1023px */
+@media (min-width: 800px) and (max-width: 1023px) {
+  .login-signup-container {
+    width: 500px; /* Giảm kích thước container cho màn hình này */
+    padding: 40px 60px; /* Điều chỉnh padding cho container */
+  }
+
+  .login-signup h1 {
+    font-size: 26px; /* Điều chỉnh kích thước tiêu đề cho màn hình này */
+  }
+
+  .login-signup-fields input {
+    height: 50px; /* Điều chỉnh chiều cao input cho màn hình này */
+  }
+
+  .login-signup-container button {
+    height: 50px; /* Điều chỉnh chiều cao nút cho màn hình này */
+    font-size: 20px; /* Điều chỉnh kích thước font cho nút */
+  }
+}
+
+/* Kích thước màn hình nhỏ hơn hoặc bằng 500px */
+@media (max-width: 500px) {
+  .login-signup-container {
+    padding: 20px 30px; /* Giảm padding cho màn hình nhỏ hơn */
+  }
+
+  .login-signup h1 {
+    font-size: 24px; /* Giảm kích thước tiêu đề cho màn hình nhỏ hơn */
+  }
+
+  .login-signup-fields {
+    margin-top: 20px; /* Điều chỉnh margin cho màn hình nhỏ hơn */
+  }
+
+  .login-signup-fields input {
+    height: 50px; /* Giữ nguyên chiều cao input cho màn hình này */
+  }
+
+  .login-signup-container button {
+    height: 50px; /* Giữ nguyên chiều cao nút cho màn hình này */
+    font-size: 16px; /* Giữ nguyên kích thước font cho nút */
+  }
+}
